@@ -24,6 +24,7 @@ class Persona (models.Model):
     sexo = models.ForeignKey(Catalogo,on_delete=models.PROTECT)
     institucion = models.ForeignKey(Institucion,on_delete=models.PROTECT)
     tipo = models.ForeignKey(Catalogo, on_delete=models.PROTECT, related_name= "fk_catalogo")
+    etnia = models.ForeignKey(Catalogo, on_delete=models.PROTECT, related_name= "fk_catalogoEtnia", blank= True)
 
 
     
